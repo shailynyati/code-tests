@@ -6,7 +6,7 @@ visit. The task is to create an iOS application to assist them with currency con
 
 ## Requirements / Results
 
-* The app should get the latest exchange rates from this endpoint: http://www.mydrivesolutions.com/tests/iOS/currencyTest/api/currencies
+* The app should get the latest exchange rates from this endpoint: https://raw.githubusercontent.com/mydrive/code-tests/master/iOS-currency-exchange-rates/rates.json
 * The user should be able to select which currency to convert from and to.
 * The app should calculate the exchange rate after the user has selected the "from" and "to" currencies
 * Write the unit tests wherever you see fit
