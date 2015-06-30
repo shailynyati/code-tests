@@ -12,6 +12,7 @@ visit. The task is to create an iOS application to assist them with currency con
 * The app should calculate the exchange rate after the user has selected the "from" and "to" currencies.
 * Write the unit tests wherever you see fit
 * Code should be uploaded to an online code repository that MyDrive staff can be given access to. e.g. Github, bitbucket or equivalent.
+* Evaluate your solution, list its strengths and weaknesses. 
 * Use as much time you need to create this app. The recommended time is 3 hours
 * Please let us know how long this task took you.
 
