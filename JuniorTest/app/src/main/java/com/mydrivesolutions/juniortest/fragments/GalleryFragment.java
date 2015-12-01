@@ -17,24 +17,70 @@ package com.mydrivesolutions.juniortest.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mydrivesolutions.juniortest.MyDriveGalleryAdapter;
 import com.mydrivesolutions.juniortest.R;
+import com.mydrivesolutions.juniortest.model.GalleryItem;
+import com.mydrivesolutions.juniortest.model.GalleryItemBuilder;
 
+import java.util.ArrayList;
+
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class GalleryFragment extends Fragment {
+    @Bind(R.id.gallery_list)
+    RecyclerView mList;
+
+    MyDriveGalleryAdapter mAdapter;
+    RecyclerView.LayoutManager mLayoutManager;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_gallery, container, false);
 
 
-
         ButterKnife.bind(this, view);
 
+        mLayoutManager = new LinearLayoutManager(getActivity());
+
+        mAdapter = new MyDriveGalleryAdapter(getContext());
+
+        mList.setHasFixedSize(true);
+        mList.setAdapter(mAdapter);
+        mList.setLayoutManager(mLayoutManager);
+
+        loadImages();
+
         return view;
+    }
+
+    private void loadImages() {
+        ArrayList<GalleryItem> images = new ArrayList<>();
+        images.add(
+                new GalleryItemBuilder()
+                        .setTitle("Image 1")
+                        .setUrl("http://xyer.co/wallpaper/24/3/cool-wallpaper-background-hd.jpg")
+                        .build()
+        );
+        images.add(
+                new GalleryItemBuilder()
+                        .setTitle("Image 2")
+                        .setUrl("http://media02.hongkiat.com/abstract/abstract-background.jpg")
+                        .build()
+        );
+        images.add(
+                new GalleryItemBuilder()
+                        .setTitle("Image 3")
+                        .setUrl("http://wallpaperput.com/wp-content/uploads/2014/10/cool-water-drops-blue-wallpaper.jpg")
+                        .build()
+        );
+        mAdapter.setItemList(images);
     }
 }
