@@ -1,6 +1,6 @@
 # MyDrive Solutions Challenge for Android
 
-The following application has the basic enviroment for you to develop, you need to customize it visualy in your own way and demonstrate your coding skills.
+The following application has the basic enviroment for you to develop, you need to brand the it in your own way and demonstrate your coding skills.
 
 ## Requirements / Results
 
