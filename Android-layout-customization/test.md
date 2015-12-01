@@ -1,6 +1,7 @@
 # MyDrive Solutions Challenge for Android
 
-The following application has the basic enviroment for you to develop, you need to customize it visualy in your own way and demonstrate your coding skills.
+The following application has the basic enviroment for you to develop, you need to brand the app with the logo.png within this repository and use this colour as base for the app:
+* #186eac
 
 ## Requirements / Results
 
