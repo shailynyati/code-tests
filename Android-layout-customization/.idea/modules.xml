@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Android-layout-customization.iml" filepath="$PROJECT_DIR$/Android-layout-customization.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/JuniorTest.iml" filepath="$PROJECT_DIR$/JuniorTest.iml" />
+>>>>>>> f781f914b538d757d2e80c7fa9cca170e3df40fe
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
